@@ -1,11 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package cl.adportas.bd;
+package cl.domito.bd;
 
-import cl.adportas.main.Main;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -19,21 +13,31 @@ public class Conexion {
     public static String BD = "tarifikall";
     public static String USER = "root";
     public static String PASS = "123456";
+    public static Connection CONECCION_TARIFICADOR;
+    public static Connection CONECCION_ESTADISTICA;
     
     private final static Logger LOG = Logger.getLogger(Conexion.class);
 
     
-    public static Connection conectar() {
-        Connection connection = null;
+    public static void conectarTarificador() {
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            connection = DriverManager.getConnection("jdbc:mysql://" + HOST + ":" + PORT + "/" + BD,USER,PASS);
+            CONECCION_TARIFICADOR = DriverManager.getConnection("jdbc:mysql://" + HOST + ":" + PORT + "/" + BD,USER,PASS);
         } 
         catch (Exception e) {
             LOG.error("ERROR EN CONEXION A BASE DE DATOS: "+e.getMessage());
             System.exit(0);
         } 
-        return connection;
+    }
+    public static void conectarEstadistica() {
+        try {
+            Class.forName("com.mysql.jdbc.Driver").newInstance();
+            CONECCION_ESTADISTICA = DriverManager.getConnection("jdbc:mysql://" + HOST + ":" + PORT + "/" + BD,USER,PASS);
+        } 
+        catch (Exception e) {
+            LOG.error("ERROR EN CONEXION A BASE DE DATOS: "+e.getMessage());
+            System.exit(0);
+        } 
     }
 
     public static void desconectar(Connection connection) 
@@ -43,7 +47,7 @@ public class Conexion {
             {
                 connection.close();
             }
-        } 
+        }
         catch (Exception e) {
             LOG.error("ERROR EN DESCONEXION A BASE DE DATOS: "+e.getMessage());
         } 
