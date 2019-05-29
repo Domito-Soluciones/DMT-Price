@@ -1,8 +1,8 @@
-package cl.adportas.main;
+package cl.domito.main;
 
-import cl.adportas.thread.Configuracion;
-import cl.adportas.thread.Estadistica;
-import cl.adportas.thread.Tarificador;
+import cl.domito.thread.Configuracion;
+import cl.domito.thread.Estadistica;
+import cl.domito.thread.Tarificador;
 
 public class Main {
     

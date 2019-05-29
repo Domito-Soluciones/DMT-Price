@@ -1,14 +1,16 @@
-package cl.adportas.thread;
+package cl.domito.thread;
 
-import cl.adportas.dominio.Extension;
-import java.util.HashMap;
+import cl.domito.dominio.Extension;
+import cl.domito.query.ExtensionQuery;
 import java.util.Map;
 
 public class Tarificador {
         
     public void tarificar(){
-        Map<String, Extension> extensiones = new HashMap();
+        Map<String, Extension> extensiones = null;
         while(true){
+            extensiones = ExtensionQuery.getExtensiones();
+            
         }
     }
     

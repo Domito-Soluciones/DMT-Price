@@ -1,4 +1,4 @@
-package cl.adportas.dominio;
+package cl.domito.dominio;
 
 import java.io.File;
 

@@ -1,11 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package cl.adportas.bd;
+package cl.domito.bd;
 
-import cl.adportas.main.Main;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -16,9 +10,9 @@ public class Conexion {
     
     public static String HOST = "localhost";
     public static String PORT = "3306";
-    public static String BD = "tarifikall";
+    public static String BD = "tarificador";
     public static String USER = "root";
-    public static String PASS = "123456";
+    public static String PASS = "";
     
     private final static Logger LOG = Logger.getLogger(Conexion.class);
 

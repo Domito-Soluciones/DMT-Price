@@ -1,0 +1,11 @@
+2019-05-21 00:08:44 INFO  Configuracion:9 - INICIANDO THREAD DE CONFIGURACIONES...
+2019-05-21 00:08:44 INFO  Configuracion:9 - CARGANDO PARAMETROS...
+2019-05-21 00:08:44 INFO  Configuracion:9 - PARAMETRO CARGADO: carpeta.cdr: CDR
+2019-05-21 00:08:44 INFO  Configuracion:9 - PARAMETRO CARGADO: carpeta.respaldo: RESPALDO
+2019-05-21 00:08:44 INFO  Configuracion:9 - PARAMETRO CARGADO: largo.anexo: 6
+2019-05-21 00:08:44 INFO  Configuracion:9 - PARAMETRO CARGADO: respaldar.cdr: true
+2019-05-21 00:08:44 INFO  Configuracion:9 - PARAMETRO CARGADO: basedato.ip: localhost
+2019-05-21 00:08:44 INFO  Configuracion:9 - PARAMETRO CARGADO: basedato.puerto: 3306
+2019-05-21 00:08:44 INFO  Configuracion:9 - PARAMETRO CARGADO: basedato.nombre: tarificador
+2019-05-21 00:08:44 INFO  Configuracion:9 - PARAMETRO CARGADO: basedato.usuario: root
+2019-05-21 00:08:44 INFO  Configuracion:9 - PARAMETRO CARGADO: basedato.clave: 

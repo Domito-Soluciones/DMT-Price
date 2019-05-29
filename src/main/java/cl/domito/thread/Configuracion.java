@@ -1,9 +1,9 @@
-package cl.adportas.thread;
+package cl.domito.thread;
 
-import cl.adportas.bd.Conexion;
-import cl.adportas.dominio.CDR;
-import cl.adportas.dominio.Extension;
-import cl.adportas.log.Log;
+import cl.domito.bd.Conexion;
+import cl.domito.dominio.CDR;
+import cl.domito.dominio.Extension;
+import cl.domito.log.Log;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
