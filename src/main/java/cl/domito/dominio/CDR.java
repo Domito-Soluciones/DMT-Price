@@ -1,6 +1,7 @@
 package cl.domito.dominio;
 
 import java.io.File;
+import java.sql.Timestamp;
 
 public class CDR {
         
@@ -23,7 +24,7 @@ public class CDR {
     public final static int PKID = 50;
     public final static int ORIGINAL_CALLED_PARTY_NUMBER_PARTITION = 51;
     public final static int CALLING_PARTY_NUMBER_PARTITION = 52;
-    public final static int FINMAL_CALLED_PARTY_NUMBER_PARTITION  = 53;
+    public final static int FINAL_CALLED_PARTY_NUMBER_PARTITION  = 53;
     public final static int LAST_REDIRECT_DN_PARTITION = 54;
     public final static int DURATION = 55;
     public final static int ORIG_DEVICE_NAME = 56;
@@ -38,5 +39,38 @@ public class CDR {
     public static File CARPETA_CDR = new File("CDR/");
     public static File CARPETA_RESPALDO = new File("RESPALDO/");
     public static boolean RESPALDAR = true;
+    
+    
+    private static CDR CDR = new CDR();
+    
+    
+    public static CDR getInstance(){
+        return CDR;
+    }
+    
+    public String pkid;
+    public int origLegCallIdentifier;
+    public int destLegCallIdentifier;
+    public Timestamp dateTimeOrigination;
+    public Timestamp dateTimeConnect;
+    public Timestamp dateTimeDisconnect;
+    public int origSpan;
+    public int destSpan;
+    public String devicenameOrigen;
+    public String devicenameDestino;
+    public String numeroLlamante;
+    public String numeroLlamado;
+    public String ultimaRed;
+    public String numFinal;
+    public int tipoLlamada;
+    public String particionLlamado;
+    public String particionLlamante;
+    public String particionFinal;
+    public String particionLR;
+    
+    public String extension;
+    public String contraparte;
+    public String particionExtension;
+    public String particionContraparte;    
     
 }

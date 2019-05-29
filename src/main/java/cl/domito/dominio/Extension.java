@@ -4,6 +4,10 @@ public class Extension {
     
     public static int LARGO_ANEXO = 6;
     
+    public static int LLAMADA_ENTRANTE = 0;
+    public static int LLAMADA_SALIENTE = 1;
+    public static int LLAMADA_ANEXO = 2;
+    
     private int id;
     private String numero;
     private int idUsuario;

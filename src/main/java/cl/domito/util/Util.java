@@ -18,4 +18,30 @@ public class Util {
         return archivos;
     }
     
+    public static String reemplazarComillas(String cadena){
+        return cadena.replaceAll("\"", "").trim();
+    }
+    
+    public static int convertirNumero(String cadena){
+        int numero = 0;
+        try{
+            numero = Integer.parseInt(cadena);
+        }
+        catch(NumberFormatException e){
+            numero = 0;
+        }
+        return numero;
+    }
+    
+    public static long convertirLong(String cadena){
+        long numero = 0;
+        try{
+            numero = Long.parseLong(cadena);
+        }
+        catch(NumberFormatException e){
+            numero = 0;
+        }
+        return numero;
+    }
+    
 }
