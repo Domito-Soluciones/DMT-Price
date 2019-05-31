@@ -40,37 +40,4 @@ public class CDR {
     public static File CARPETA_RESPALDO = new File("RESPALDO/");
     public static boolean RESPALDAR = true;
     
-    
-    private static CDR CDR = new CDR();
-    
-    
-    public static CDR getInstance(){
-        return CDR;
-    }
-    
-    public String pkid;
-    public int origLegCallIdentifier;
-    public int destLegCallIdentifier;
-    public Timestamp dateTimeOrigination;
-    public Timestamp dateTimeConnect;
-    public Timestamp dateTimeDisconnect;
-    public int origSpan;
-    public int destSpan;
-    public String devicenameOrigen;
-    public String devicenameDestino;
-    public String numeroLlamante;
-    public String numeroLlamado;
-    public String ultimaRed;
-    public String numFinal;
-    public int tipoLlamada;
-    public String particionLlamado;
-    public String particionLlamante;
-    public String particionFinal;
-    public String particionLR;
-    
-    public String extension;
-    public String contraparte;
-    public String particionExtension;
-    public String particionContraparte;    
-    
 }
